@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Level Password Security</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Three-Level Password Security</h1>
+
+    <div id="signup">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" required>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="step1" style="display:none;">
+        <h2>Step 1: Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Level Password Security</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Three-Level Password Security</h1>
+
+    <div id="signup">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" required>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="step1" style="display:none;">
+        <h2>Step 1: Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="step2" style="display:none;">
+        <h2>Step 2: OTP Verification</h2>
+        <p id="otp-display"></p>
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" required>
+        <button onclick="verifyOtp()">Verify OTP</button>
+    </div>
+
+    <div id="step3" style="display:none;">
+        <h2>Step 3: Biometric Verification</h2>
+        <button onclick="biometricVerify()">Verify Biometric</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Level Password Security</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Three-Level Password Security</h1>
+
+    <div id="signup">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" required>
+        <div id="step3" style="display:none;">
+            <h2>Step 3: Biometric Verification</h2>
+            <div id="biometric-camera">
+                <video id="biometric-video" width="320" height="240" autoplay></video>
+                <button onclick="captureBiometric()">Capture Biometric</button>
+                <canvas id="biometric-canvas" style="display: none;"></canvas>
+            </div>
+            <button onclick="biometricVerify()">Verify Biometric</button>
+        </div>
+        
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="step1" style="display:none;">
+        <h2>Step 1: Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="step2" style="display:none;">
+        <h2>Step 2: OTP Verification</h2>
+        <p id="otp-display"></p>
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" required>
+        <button onclick="verifyOtp()">Verify OTP</button>
+    </div>
+
+    <div id="step3" style="display:none;">
+        <h2>Step 3: Biometric Verification</h2>
+        <button onclick="biometricVerify()">Verify Biometric</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Level Password Security</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Three-Level Password Security</h1>
+
+    <div id="signup">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" required>
+        <div id="camera">
+            <video id="signup-video" width="320" height="240" autoplay></video>
+            <button onclick="capturePhoto()">Capture Photo</button>
+            <canvas id="signup-canvas" style="display: none;"></canvas>
+        </div>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="step1" style="display:none;">
+        <h2>Step 1: Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="step2" style="display:none;">
+        <h2>Step 2: OTP Verification</h2>
+        <p id="otp-display"></p>
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" required>
+        <button onclick="verifyOtp()">Verify OTP</button>
+    </div>
+
+    <div id="step3" style="display:none;">
+        <h2>Step 3: Biometric Verification</h2>
+        <div id="biometric-camera">
+            <video id="biometric-video" width="320" height="240" autoplay></video>
+            <button onclick="captureBiometric()">Capture Biometric</button>
+            <canvas id="biometric-canvas" style="display: none;"></canvas>
+        </div>
+        <button onclick="biometricVerify()">Verify Biometric</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

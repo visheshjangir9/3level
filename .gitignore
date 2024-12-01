@@ -1,0 +1,40 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment directory
+env/
+/3level
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Log files
+logs/
+*.log
+
+# Test and temporary files
+*.tmp
+*.bak
+*.swp
+*.old
+*.orig
+*.test
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Data files
+data/test_face.jpg
+data/*.key
+
+# Secrets
+*.key
+*.env
+
+# Dependency directories
+/node_modules
